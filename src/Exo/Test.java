@@ -5,18 +5,19 @@ import java.util.Scanner;
 public class Test {
 	final static float INF = Float.POSITIVE_INFINITY;
 	
-	public static void main(int[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("hello world");
 		System.out.println("Hi");
 		int abc = 3;
 		System.out.println((abc +1) +"");
-		
-		Object[] tabs = init(args);
+		int[] tab = {0,1};
+		System.out.println(tab[-1]);
+		/*Object[] tabs = init(args);
 		Object[] res = floydWarshall(tabs);
 		
 		System.out.println(res[0]);
-		System.out.println(res[1]);
+		System.out.println(res[1]);*/
 		
 
 	}
