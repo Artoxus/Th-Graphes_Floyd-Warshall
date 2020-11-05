@@ -2,6 +2,7 @@ package Exo;
 
 import java.util.Scanner;
 
+
 public class Test {
 	final static float INF = Float.POSITIVE_INFINITY;
 	
