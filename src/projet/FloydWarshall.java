@@ -17,7 +17,7 @@ public class FloydWarshall {
 		for (int k = 0; k < this.size; k++) { 
 			for (int i = 0; i < this.size; i++) { 
 				for (int j = 0; j < this.size; j++) { 
-					if (matrix[i][k] + matrix[k][j] < matrix[i][j]) { 
+					if (matrix[i][k] + matrix[k][j] < matrix[i][j] && matrix[i][k] != INF && matrix[k][j] != INF) { 
 						matrix[i][j] = matrix[i][k] + matrix[k][j];
 						chemin[i][j] = chemin[i][k] + chemin[k][j];
 						}
