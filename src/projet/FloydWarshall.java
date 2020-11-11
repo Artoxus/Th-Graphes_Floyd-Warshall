@@ -34,10 +34,10 @@ public class FloydWarshall {
 	public void printMatrix() {
 		System.out.print("\t");
 		for (int i = 0; i<this.size; i++)
-			System.out.print(i + "\t");
+			System.out.print("("+i+")" + "\t");
 		System.out.println("");
 		for (int i = 0; i < this.size; i++) {
-			System.out.print(i + "\t");
+			System.out.print("("+i+")" + "\t");
 			for (int j = 0; j < this.size; j++) {
 				if (matrix[i][j] == INF)
 					System.out.print("INF " + "\t");
@@ -51,10 +51,10 @@ public class FloydWarshall {
 	public void printMatrice() {
 		System.out.print("\t");
 		for (int i = 0; i<this.size; i++)
-			System.out.print(i + "\t");
+			System.out.print("("+i+")" + "\t");
 		System.out.println("");
 		for (int i = 0; i < this.size; i++) {
-			System.out.print(i + "\t");
+			System.out.print("("+i+")" + "\t");
 			for (int j = 0; j < this.size; j++) {
 				if (matrice[i][j] == "None")
 					System.out.print("None " + "\t");
@@ -73,7 +73,7 @@ public class FloydWarshall {
 					if (matrice[i][j]==INF)
 						graph[i][j]="None";
 					else
-						graph[i][j]=i+"," ;
+						graph[i][j]=i+"" ;
 					}
 			}
 		return graph;
