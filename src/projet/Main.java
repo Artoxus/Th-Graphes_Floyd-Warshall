@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		while (true) {
 			Scanner scanner = new Scanner(System.in);
-		    System.out.println("Please enter the matrix's file location : ");
+		    System.out.println("Please enter the graph's file location : ");
 		    String path = scanner.nextLine();
 		    try {
 		    	ScannerMatrix s = new ScannerMatrix();
@@ -35,7 +35,7 @@ public class Main {
 		    	System.out.println("Error while executing program");
 		        System.out.println(e.getMessage());
 		        }
-		    System.out.println("Load another matrix ? (yes or no)");
+		    System.out.println("Load another graph ? (yes or no)");
 		    String answer = scanner.nextLine();
 		    if (!answer.toLowerCase().equals("yes")) {
 		    	scanner.close();
